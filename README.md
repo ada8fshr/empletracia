@@ -1,2 +1,2 @@
 # injection
-Injection code for https://github.com/gzlaw/karma
+Injection code for https://github.com/opsecs/karma
