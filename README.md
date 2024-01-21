@@ -1,2 +1,2 @@
 # injection
-Injection code for https://github.com/internalvpn/karma
+Injection code for https://github.com/internalvpn/solve
