@@ -1,2 +1,2 @@
 # injection
-Injection code for https://github.com/internalvpn/Solve-Stealer
+Injection code for https://github.com/imsolve/Solve-Stealer
