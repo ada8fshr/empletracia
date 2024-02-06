@@ -1,2 +1,2 @@
 # injection
-Injection code for https://github.com/imsolve/Panic-Stealer
+Injection code for https://github.com/imsolve/panic
